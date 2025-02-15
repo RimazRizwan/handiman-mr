@@ -746,4 +746,46 @@ h2 {
     background-color: #1EBE5D;
 }
 
+.contact-section-1 {
+    position: fixed;
+    left: 20px; /* Adjust spacing from the left corner */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Ensures it stays above other content */
+}
 
+.contact-container-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adjust space between icons */
+}
+
+.contact-item-2,
+.contact-item-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Icon size */
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    /* transition: background 0.3s ease-in-out; */
+    color: white;
+}
+
+.contact-item-2 {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+.contact-item-1 {
+    background-color: #007bff; /* Blue for phone icon */
+}
+
+.contact-item-2:hover {
+    background-color: #128C7E;
+}
+
+.contact-item-1:hover {
+    background-color: #0056b3;
+}
