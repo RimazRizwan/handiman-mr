@@ -15,14 +15,14 @@
             <div class="container nav-container">
                 <div class="logo">
                     <i data-lucide="wrench"></i>
-                    <span>Mr.Handiman</span>
+                    <span>MR.HANDYMAN</span>
                 </div>
                 <button class="mobile-menu-btn">
                     <i data-lucide="menu"></i>
                 </button>
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#story">About Us</a></li>
                     <li class="dropdown">
                         <a href="#services">Services</a>
                         <ul class="dropdown-menu">
@@ -77,13 +77,15 @@
     <div class="our-story" id="story">
         <div class="container left">
             <div class="story-header">
-                <h2>Our Story</h2>
+                <h2>About Us</h2>
                 <p class="story-subtitle">Leading Service Provider in Sri Lanka</p>
+                <!-- <p>At [Your Company Name], we prioritize your safety and security in all our services. Whether you're a local client or working with us from abroad, we ensure that all our processes are handled with the utmost care and professionalism. Our team is committed to providing top-quality services while maintaining transparency, trust, and integrity.</p> -->
+                <p>We take extra measures to ensure secure transactions, reliable communication, and peace of mind, no matter where you are located. Our experience in working with international clients means we understand the importance of clear communication, confidentiality, and timely execution. Trust us to handle your projects with the highest standards of safety and security.</p>
             </div>
 
             <div class="story-grid">
                 <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80" alt="Handyman team at work" class="main-image" />
+                    <img src="IMAGE/OUR.jpeg" alt="Handyman team at work" class="main-image" />
                 </div>
 
                 <div class="story-content">
@@ -131,9 +133,10 @@
                     <div class="service-item">
                         <i data-lucide="layout-grid"></i>Flooring
                     </div>
-                    <div class="service-item">
-                        <i data-lucide="home"></i>Roofing
-                    </div>
+                    <a href="#roof" class="service-item">
+                        <i data-lucide="home"></i>
+                        <span>Roofing</span>
+                      </a>
                     <div class="service-item">
                         <i data-lucide="droplet"></i>Waterproofing
                     </div>
@@ -150,160 +153,756 @@
 
     <div class="services" id="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p class="services-intro">
-                Professional and reliable handyman services for all your needs
-            </p>
-
-            <div class="services-categories">
-                <!-- Roof Services -->
-                <div class="service-category" id="roof">
-                    <div class="category-header">
-                        <i data-lucide="home"></i>
-                        <h3>Roof Services</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Roof cleaning and maintenance</li>
-                        <li><i data-lucide="check"></i>Roof repairs and restoration</li>
-                        <li><i data-lucide="check"></i>New roof installation</li>
-                        <li><i data-lucide="check"></i>Gutter cleaning and repairs</li>
-                    </ul>
+          <h2>Our Services</h2>
+          <p class="services-intro">
+            Professional and reliable handyman services for all your needs
+          </p>
+      
+          <div class="services-categories">
+            <input type="checkbox" id="roof-modal" class="modal-toggle">
+            <label for="roof-modal" id="roof" class="service-card roof-card">
+              <div class="category-header">
+                <div class="icon-wrapper">
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> -->
                 </div>
-
-                <!-- Ceiling Services -->
-                <div class="service-category" id="ceiling">
-                    <div class="category-header">
-                        <i data-lucide="layers"></i>
-                        <h3>Ceiling Services</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>New ceiling installation</li>
-                        <li><i data-lucide="check"></i>Ceiling repairs and maintenance</li>
-                        <li><i data-lucide="check"></i>Ceiling painting and finishing</li>
-                    </ul>
+                <h3>Roof Services</h3>
+              </div>
+              <ul class="service-list">
+                <li><i data-lucide="check"></i>Roof cleaning and maintenance</li>
+                <li><i data-lucide="check"></i>Roof repairs and restoration</li>
+                <li><i data-lucide="check"></i>New roof installation</li>
+                <li><i data-lucide="check"></i>Gutter cleaning and repairs</li>
+              </ul>
+            </label>
+            
+            <div class="modal">
+              <div class="modal-content">
+                <label for="roof-modal" class="close-modal">&times;</label>
+                <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Roof Services Details</h2>
+                
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Roof cleaning and maintenance</h3>
+                  <p>Regular maintenance and thorough cleaning to extend roof life and prevent damage.</p>
                 </div>
+            
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Roof repairs and restoration</h3>
+                  <p>Expert repair services for leaks, damaged tiles, and structural issues.</p>
+                </div>
+            
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">New roof installation</h3>
+                  <p>Complete roof replacement and new installation with quality materials.</p>
+                </div>
+            
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Gutter cleaning and repairs</h3>
+                  <p>Professional gutter maintenance and repair services to prevent water damage.</p>
+                </div>
+            
+              </div>
+            </div>
+            
+      
+            <!-- Ceiling Services -->
+            <input type="checkbox" id="ceiling-modal" class="modal-toggle">
+            <label for="ceiling-modal" class="service-card ceiling-card">
+              <div class="category-header">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 14h14"/><path d="M8 8h8"/><path d="M12 4v16"/></svg>
+                </div>
+                <h3>Ceiling Services</h3>
+              </div>
+              <ul class="service-list">
+                <li><i data-lucide="check"></i>New ceiling installation</li>
+                <li><i data-lucide="check"></i>Ceiling repairs and maintenance</li>
+                <li><i data-lucide="check"></i>Ceiling painting and finishing</li>
+              </ul>
+            </label>
+            <div class="modal">
+              <div class="modal-content">
+                <label for="ceiling-modal" class="close-modal">&times;</label>
+                <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Ceiling Services Details</h2>
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">New ceiling installation</h3>
+                  <p>Professional installation of various ceiling types including suspended ceilings, drywall, and decorative options.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Ceiling repairs and maintenance</h3>
+                  <p>Expert repair services for water damage, cracks, holes, and general wear and tear.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                  <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Ceiling painting and finishing</h3>
+                  <p>High-quality painting services with proper preparation and premium materials for a lasting finish.</p>
+                </div>
+              </div>
+            </div>
 
                 <!-- Masonry Services -->
-                <div class="service-category" id="masonry">
-                    <div class="category-header">
-                        <i data-lucide="bricks"></i>
-                        <h3>Masonry Work</h3>
+                <input type="checkbox" id="ceiling-modal" class="modal-toggle">
+                <label for="ceiling-modal" class="service-card mason-card ">
+                  <div class="category-header">
+                    <div class="icon-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 14h14"/><path d="M8 8h8"/><path d="M12 4v16"/></svg>
                     </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Crack repairs and restoration</li>
-                        <li><i data-lucide="check"></i>Wall painting and finishing</li>
-                        <li><i data-lucide="check"></i>Renovation projects</li>
-                        <li><i data-lucide="check"></i>Boundary wall construction and renovation</li>
-                    </ul>
+                    <h3>Masonry Work</h3>
+                  </div>
+                  <ul class="service-list">
+                    <li><i data-lucide="check"></i>Crack repairs and restoration</li>
+                    <li><i data-lucide="check"></i>Wall painting and finishing</li>
+                    <li><i data-lucide="check"></i>Renovation projects</li>
+                    <li><i data-lucide="check"></i>Boundary wall construction and renovation</li>
+                  </ul>
+                </label>
+                <div class="modal">
+                  <div class="modal-content">
+                    <label for="ceiling-modal" class="close-modal">&times;</label>
+                    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Ceiling Services Details</h2>
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">New ceiling installation</h3>
+                      <p>Professional installation of various ceiling types including suspended ceilings, drywall, and decorative options.</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Ceiling repairs and maintenance</h3>
+                      <p>Expert repair services for water damage, cracks, holes, and general wear and tear.</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Ceiling painting and finishing</h3>
+                      <p>High-quality painting services with proper preparation and premium materials for a lasting finish.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <input type="checkbox" id="waste-disposal-modal" class="modal-toggle">
+                <label for="waste-disposal-modal" id="waste-disposal" class="service-card waste-disposal-card">
+                  <div class="category-header">
+                    <div class="icon-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 14h14"/><path d="M8 8h8"/><path d="M12 4v16"/></svg>
+                    </div>
+                    <h3>Domestic Waste Disposal</h3>
+                  </div>
+                  <ul class="service-list">
+                    <li><i data-lucide="check"></i>Household waste collection</li>
+                    <li><i data-lucide="check"></i>Bulk waste disposal</li>
+                    <li><i data-lucide="check"></i>Eco-friendly waste management</li>
+                    <li><i data-lucide="check"></i>Garden waste disposal</li>
+                  </ul>
+                </label>
+
+                <div class="modal">
+                  <div class="modal-content">
+                    <label for="waste-disposal-modal" class="close-modal">&times;</label>
+                    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Domestic Waste Disposal Services Details</h2>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Household Waste Collection</h3>
+                      <p>Efficient collection of everyday household waste, ensuring timely pickup and proper disposal.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Bulk Waste Disposal</h3>
+                      <p>Disposal of large, bulky items like furniture, appliances, and other household debris.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Eco-Friendly Waste Management</h3>
+                      <p>Waste management services that focus on recycling and environmentally-friendly disposal methods.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Garden Waste Disposal</h3>
+                      <p>Collection and disposal of garden waste, including branches, leaves, and other yard debris.</p>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- Carpentry Services -->
-                <div class="service-category" id="carpentry">
-                    <div class="category-header">
-                        <i data-lucide="hammer"></i>
-                        <h3>Carpentry</h3>
+                <input type="checkbox" id="woodwork-modal" class="modal-toggle">
+                <label for="woodwork-modal" class="service-card woodwork-card">
+                  <div class="category-header">
+                    <div class="icon-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20"/>
+                        <path d="M5 14h14"/>
+                        <path d="M8 8h8"/>
+                        <path d="M12 4v16"/>
+                      </svg>
                     </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Door and window repairs</li>
-                        <li><i data-lucide="check"></i>Wall cupboard maintenance</li>
-                        <li><i data-lucide="check"></i>Pantry cupboard repairs</li>
-                    </ul>
+                    <h3>Wood Work Services</h3>
+                  </div>
+                  <ul class="service-list">
+                    <li><i data-lucide="check"></i>Timber ceiling repairing</li>
+                    <li><i data-lucide="check"></i>Timber partition work</li>
+                    <li><i data-lucide="check"></i>Timber door & window repairing & painting</li>
+                    <li><i data-lucide="check"></i>All kinds of timber works</li>
+                  </ul>
+                </label>
+                <div class="modal">
+                  <div class="modal-content">
+                    <label for="woodwork-modal" class="close-modal">&times;</label>
+                    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Wood Work Services Details</h2>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Timber Ceiling Repairing</h3>
+                      <p>Professional repair services for damaged timber ceilings, ensuring stability and aesthetic appeal with high-quality materials and craftsmanship.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Timber Partition Work</h3>
+                      <p>Expert installation and design of timber partitions for creating space or dividing areas with quality craftsmanship and design flexibility.</p>
+                    </div>
+                
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Timber Door & Window Repairing & Painting</h3>
+                      <p>Restoring the functionality and appearance of timber doors and windows with professional repairs and painting for enhanced protection and beauty.</p>
+                    </div>
+                
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">All Kinds of Timber Works</h3>
+                      <p>Comprehensive woodwork services, including custom designs, repairs, and installations for furniture, doors, windows, and more.</p>
+                    </div>
+                
+                  </div>
                 </div>
+                
+                <input type="checkbox" id="housekeeping-modal" class="modal-toggle">
+<label for="housekeeping-modal" id="housekeeping" class="service-card housekeeping-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Housekeeping</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Deep cleaning services</li>
+    <li><i data-lucide="check"></i>Fish tank cleaning</li>
+    <li><i data-lucide="check"></i>Brass items cleaning & polishing</li>
+    <li><i data-lucide="check"></i>Pressure washing</li>
+    <li><i data-lucide="check"></i>Roof cleaning</li>
+    <li><i data-lucide="check"></i>Dusting and vacuuming</li>
+    <li><i data-lucide="check"></i>Window cleaning</li>
+  </ul>
+</label>
+
+<div class="modal">
+  <div class="modal-content">
+    <label for="housekeeping-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Housekeeping & Room Cleaning Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Daily Room Cleaning</h3>
+      <p>Comprehensive cleaning services for your rooms on a daily basis, ensuring a tidy and welcoming environment.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Deep Cleaning Services</h3>
+      <p>Thorough cleaning that includes every nook and cranny of your room, focusing on high-traffic areas and hidden dirt.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Laundry and Ironing Services</h3>
+      <p>Professional laundry and ironing services to ensure your clothes and linens are perfectly clean and pressed.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Bathroom Sanitization</h3>
+      <p>Complete sanitization of bathrooms to maintain hygiene and a fresh, clean atmosphere.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Dusting and Vacuuming</h3>
+      <p>Regular dusting and vacuuming of surfaces, carpets, and upholstery to maintain cleanliness and freshness.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Window Cleaning</h3>
+      <p>Professional cleaning of windows to ensure they are streak-free and spotless, enhancing the overall look of your space.</p>
+    </div>
+
+  </div>
+</div>
+
 
                 <!-- Electrical Services -->
-                <div class="service-category" id="Electrical">
-                    <div class="category-header">
-                        <i data-lucide="zap"></i>
-                        <h3>Electrical</h3>
+                <input type="checkbox" id="electrical-modal" class="modal-toggle">
+                <label for="electrical-modal" class="service-card electrical-card">
+                  <div class="category-header">
+                    <div class="icon-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20"/>
+                        <path d="M5 14h14"/>
+                        <path d="M8 8h8"/>
+                        <path d="M12 4v16"/>
+                      </svg>
                     </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Electrical wiring installation</li>
-                        <li><i data-lucide="check"></i>Fan installation and repairs</li>
-                        <li><i data-lucide="check"></i>Light switch and plug point installation</li>
-                    </ul>
+                    <h3>Electrical Services</h3>
+                  </div>
+                  <ul class="service-list">
+                    <li><i data-lucide="check"></i>Point wiring</li>
+                    <li><i data-lucide="check"></i>Bulb change</li>
+                    <li><i data-lucide="check"></i>Fittings changing & fixing</li>
+                    <li><i data-lucide="check"></i>Decorating and lighting</li>
+                    <li><i data-lucide="check"></i>Panel board repairing & all kinds of electrical work</li>
+                  </ul>
+                </label>
+                <div class="modal">
+                  <div class="modal-content">
+                    <label for="electrical-modal" class="close-modal">&times;</label>
+                    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Electrical Services Details</h2>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Point Wiring</h3>
+                      <p>Installation and maintenance of electrical wiring for power points, ensuring a safe and reliable power supply to your devices.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Bulb Change</h3>
+                      <p>Efficient and safe bulb changing services for all types of lighting fixtures, ensuring proper functionality and energy savings.</p>
+                    </div>
+                
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Fittings Changing & Fixing</h3>
+                      <p>Expert replacement and installation of electrical fittings, including switches, sockets, and light fixtures, ensuring safety and durability.</p>
+                    </div>
+                
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Decorating and Lighting</h3>
+                      <p>Creative lighting solutions and decoration to enhance the ambiance of your space with professional installation and design.</p>
+                    </div>
+                
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Panel Board Repairing & All Kinds of Electrical Work</h3>
+                      <p>Comprehensive electrical work including panel board repairs, electrical fault finding, rewiring, and installation of new electrical systems as per requirements.</p>
+                    </div>
+                
+                  </div>
                 </div>
+                
 
-                <!-- AC Services -->
-                <div class="service-category" id="ac">
-                    <div class="category-header">
-                        <i data-lucide="wind"></i>
-                        <h3>A/C Services</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>AC repairs and troubleshooting</li>
-                        <li><i data-lucide="check"></i>Regular maintenance and servicing</li>
-                    </ul>
-                </div>
+                <!-- plumbing Services -->
+                <input type="checkbox" id="plumbing-modal" class="modal-toggle">
+<label for="plumbing-modal" class="service-card plumbing-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Plumbing Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Emergency plumbing services</li>
+    <li><i data-lucide="check"></i>Routine plumbing maintenance</li>
+    <li><i data-lucide="check"></i>Plumbing repairs: fixing leaks, clogs, and other plumbing problems</li>
+    <li><i data-lucide="check"></i>Water heater installation and repair</li>
+    <li><i data-lucide="check"></i>Pipe installation and repairs</li>
+    <li><i data-lucide="check"></i>Drain cleaning services</li>
+    <li><i data-lucide="check"></i>Sewer line services</li>
+    <li><i data-lucide="check"></i>Fixture installation</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="plumbing-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Plumbing Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Emergency Plumbing Services</h3>
+      <p>Immediate response to plumbing emergencies, including burst pipes, major leaks, and other urgent plumbing issues that require fast attention.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Routine Plumbing Maintenance</h3>
+      <p>Regular maintenance services to ensure your plumbing system functions optimally, including inspections and preventive measures.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Plumbing Repairs</h3>
+      <p>Fixing leaks, clogs, broken pipes, and other plumbing problems with professional tools and techniques to restore proper water flow and prevent damage.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Water Heater Installation and Repair</h3>
+      <p>Installing new water heaters or repairing existing units to ensure reliable hot water supply for your home or business.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Pipe Installation and Repairs</h3>
+      <p>Installation of new pipes and repair of existing ones, including underground and exposed piping systems.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Drain Cleaning Services</h3>
+      <p>Clearing blocked drains using professional equipment and techniques to ensure proper drainage and avoid backups.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Sewer Line Services</h3>
+      <p>Managing and repairing sewer lines to ensure proper waste removal and prevent blockages or contamination.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Fixture Installation</h3>
+      <p>Installation of plumbing fixtures such as sinks, toilets, and faucets, ensuring proper connections and functionality.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<input type="checkbox" id="minor-construction-modal" class="modal-toggle">
+<label for="minor-construction-modal" class="service-card minor-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Minor Construction Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Construction of dr</li>
+    <li><i data-lucide="check"></i>Boundary Wall Construction</li>
+    <li><i data-lucide="check"></i>Construction of Floor Drains</li>
+    <li><i data-lucide="check"></i>Construction of Electrical & Water Meter’s Chambers</li>
+    <li><i data-lucide="check"></i>Fair face stone Work</li>
+    <li><i data-lucide="check"></i>Interlock Flooring</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="minor-construction-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Minor Construction Services Details</h2>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Construction of Kennel</h3>
+      <p>Building customized kennels with durable materials to ensure a safe and comfortable space for pets.</p>
+    </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Boundary Wall Construction</h3>
+      <p>Constructing secure and aesthetically pleasing boundary walls with various materials like brick, stone, or concrete.</p>
+    </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Construction of Floor Drains</h3>
+      <p>Installing floor drains for efficient water flow and drainage, suitable for homes, offices, and industrial areas.</p>
+    </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Construction of Electrical & Water Meter’s Chambers</h3>
+      <p>Building chambers for safe installation and protection of electrical and water meters in compliance with regulations.</p>
+    </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Fair face stone Work</h3>
+      <p>Expert craftsmanship in stonework for external walls and decorative features with a fair face finish.</p>
+    </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Interlock Flooring</h3>
+      <p>Installation of interlocking tiles for durable and aesthetically appealing outdoor or indoor flooring solutions.</p>
+    </div>
+  </div>
+</div>
+
 
                 <!-- Power Tools -->
-                <div class="service-category" id="power">
-                    <div class="category-header">
-                        <i data-lucide="drill"></i>
-                        <h3>Power Tools</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Tool repairs and maintenance</li>
-                        <li><i data-lucide="check"></i>Equipment servicing</li>
-                    </ul>
-                </div>
+                <input type="checkbox" id="painting-modal" class="modal-toggle">
+<label for="painting-modal" class="service-card painting-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Painting Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Wall painting</li>
+    <li><i data-lucide="check"></i>Ceiling painting</li>
+    <li><i data-lucide="check"></i>Door & window painting & repairing</li>
+    <li><i data-lucide="check"></i>Roof gutter, down pipes & valance board painting & repairing</li>
+    <li><i data-lucide="check"></i>Floor painting</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="painting-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Painting Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Wall Painting</h3>
+      <p>High-quality wall painting services for both residential and commercial spaces, with professional surface preparation and premium materials for a smooth finish.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Ceiling Painting</h3>
+      <p>Ceiling painting with the best techniques to avoid drips, stains, or uneven coverage, ensuring a flawless and long-lasting finish.</p>
+    </div>
 
-                <!-- Plumbing Services -->
-                <div class="service-category" id="Plumbing">
-                    <div class="category-header">
-                        <i data-lucide="droplets"></i>
-                        <h3>Plumbing</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>New pipeline installation</li>
-                        <li><i data-lucide="check"></i>Hot water line installation</li>
-                        <li><i data-lucide="check"></i>Drainage system repairs</li>
-                    </ul>
-                </div>
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Door & Window Painting & Repairing</h3>
+      <p>Painting and repairing doors and windows to restore their appearance, functionality, and protection from the elements.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Roof Gutter, Down Pipes & Valance Board Painting & Repairing</h3>
+      <p>Specialized painting and repairing services for roof gutters, downpipes, and valance boards to ensure they are durable, functional, and visually appealing.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Floor Painting</h3>
+      <p>Durable floor painting services for both indoor and outdoor spaces, ensuring a smooth finish and long-lasting protection for your floors.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+                <!-- aluminium Services -->
+                <input type="checkbox" id="aluminumwork-modal" class="modal-toggle">
+<label for="aluminumwork-modal" class="service-card aluminumwork-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Aluminum Work Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Aluminum partition</li>
+    <li><i data-lucide="check"></i>Aluminum door & window fixing & repairing</li>
+    <li><i data-lucide="check"></i>Aluminum ceiling work & all kinds of aluminum works</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="aluminumwork-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Aluminum Work Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Aluminum Partition</h3>
+      <p>Professional installation of aluminum partitions to divide spaces efficiently while ensuring strength, durability, and aesthetic appeal.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Aluminum Door & Window Fixing & Repairing</h3>
+      <p>Fixing and repairing aluminum doors and windows to restore their function, appearance, and durability, using quality materials and expert craftsmanship.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Aluminum Ceiling Work & All Kinds of Aluminum Works</h3>
+      <p>Design, installation, and repair of aluminum ceilings and other aluminum works, ensuring a clean and modern look for your spaces.</p>
+    </div>
+
+  </div>
+</div>
+
 
                 <!-- Floor Services -->
-                <div class="service-category" id="Floor">
-                    <div class="category-header">
-                        <i data-lucide="grid"></i>
-                        <h3>Floor Services</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Floor boarding and repairs</li>
-                        <li><i data-lucide="check"></i>Tile installation</li>
-                        <li><i data-lucide="check"></i>Floor polishing</li>
-                    </ul>
-                </div>
+                <input type="checkbox" id="flooring-modal" class="modal-toggle">
+<label for="flooring-modal" class="service-card flooring-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Flooring Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Tile removing & repairing</li>
+    <li><i data-lucide="check"></i>Tile grouting</li>
+    <li><i data-lucide="check"></i>Floor painting</li>
+    <li><i data-lucide="check"></i>Titanium floor repairing</li>
+    <li><i data-lucide="check"></i>Timber floor repairing & all kinds of floor repairing</li>
+    <li><i data-lucide="check"></i>Floor rendering</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="flooring-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Flooring Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Tile Removing & Repairing</h3>
+      <p>Professional removal and repair of tiles to restore the appearance and functionality of your floors, ensuring durability and a seamless finish.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Tile Grouting</h3>
+      <p>Grouting services to fill spaces between tiles, ensuring stability, preventing moisture damage, and providing a clean, finished look.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Floor Painting</h3>
+      <p>Floor painting services to enhance the appearance and protect your floors, including durable coatings for both residential and commercial properties.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Titanium Floor Repairing</h3>
+      <p>Repairing titanium floors to restore strength, appearance, and functionality, ensuring a long-lasting and high-performance solution.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Timber Floor Repairing & All Kinds of Floor Repairing</h3>
+      <p>Specialized repair services for timber floors and all types of flooring, ensuring smooth and sturdy surfaces for long-term durability.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Floor Rendering</h3>
+      <p>Expert floor rendering services to level and smooth uneven surfaces, providing a solid foundation for floor finishes and improving the overall look of the space.</p>
+    </div>
+
+  </div>
+</div>
+
 
                 <!-- Garden Services -->
-                <div class="service-category" id="garden">
-                    <div class="category-header">
-                        <i data-lucide="flower"></i>
-                        <h3>Garden Maintenance</h3>
+                <input type="checkbox" id="gardening-modal" class="modal-toggle">
+                <label for="gardening-modal" class="service-card garden-card">
+                  <div class="category-header">
+                    <div class="icon-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20"/>
+                        <path d="M5 14h14"/>
+                        <path d="M8 8h8"/>
+                        <path d="M12 4v16"/>
+                      </svg>
                     </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Weeding and garden cleanup</li>
-                        <li><i data-lucide="check"></i>Tree pruning and trimming</li>
-                        <li><i data-lucide="check"></i>Long/short term contracts available</li>
-                    </ul>
+                    <h3>Minor Gardening Services</h3>
+                  </div>
+                  <ul class="service-list">
+                    <li><i data-lucide="check"></i>Grass cutting</li>
+                    <li><i data-lucide="check"></i>Tree cutting</li>
+                    <li><i data-lucide="check"></i>Minor gardening designing</li>
+                    <li><i data-lucide="check"></i>Retaining wall construction & repairing</li>
+                    <li><i data-lucide="check"></i>Flower trill construction & repairing</li>
+                    <li><i data-lucide="check"></i>Minor landscaping</li>
+                    <li><i data-lucide="check"></i>Garden tap fixing & repairing</li>
+                    <li><i data-lucide="check"></i>Pipe laying</li>
+                  </ul>
+                </label>
+                <div class="modal">
+                  <div class="modal-content">
+                    <label for="gardening-modal" class="close-modal">&times;</label>
+                    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Minor Gardening Services Details</h2>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Grass Cutting</h3>
+                      <p>Professional grass cutting services to keep your lawn neat and healthy throughout the year.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Tree Cutting</h3>
+                      <p>Tree cutting and pruning services for maintaining the health and aesthetics of your garden.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Minor Gardening Designing</h3>
+                      <p>Designing your garden layout for an aesthetically pleasing and functional outdoor space.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Retaining Wall Construction & Repairing</h3>
+                      <p>We build and repair retaining walls to enhance the functionality and look of your garden.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Flower Trill Construction & Repairing</h3>
+                      <p>Constructing and repairing flower trills to showcase your plants in an organized and decorative manner.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Minor Landscaping</h3>
+                      <p>Landscaping services including planting, mulching, and creating a well-maintained outdoor space.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Garden Tap Fixing & Repairing</h3>
+                      <p>Fixing and repairing garden taps to ensure efficient water usage in your garden.</p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Pipe Laying</h3>
+                      <p>Expert pipe laying services for irrigation systems and water drainage in your garden.</p>
+                    </div>
+
+                  </div>
                 </div>
 
-                <!-- Office Services -->
-                <div class="service-category" id="Office">
-                    <div class="category-header">
-                        <i data-lucide="building"></i>
-                        <h3>Office Maintenance</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li><i data-lucide="check"></i>Building maintenance</li>
-                        <li><i data-lucide="check"></i>Office repairs</li>
-                        <li><i data-lucide="check"></i>Garden maintenance</li>
-                    </ul>
-                </div>
+
+                <!-- water proof Services -->
+                <input type="checkbox" id="waterproofing-modal" class="modal-toggle">
+<label for="waterproofing-modal" class="service-card waterproofing-card">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 20h20"/>
+        <path d="M5 14h14"/>
+        <path d="M8 8h8"/>
+        <path d="M12 4v16"/>
+      </svg>
+    </div>
+    <h3>Water Proofing Services</h3>
+  </div>
+  <ul class="service-list">
+    <li><i data-lucide="check"></i>Bathroom waterproofing</li>
+    <li><i data-lucide="check"></i>Balcony, flower trull waterproofing</li>
+    <li><i data-lucide="check"></i>Waterproofing repairs & all kinds of waterproofing work</li>
+  </ul>
+</label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="waterproofing-modal" class="close-modal">&times;</label>
+    <h2 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Waterproofing Services Details</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Bathroom Waterproofing</h3>
+      <p>Effective waterproofing solutions for bathrooms to prevent water leakage, mold growth, and other water-related issues, ensuring a dry and safe environment.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Balcony, Flower Trull Waterproofing</h3>
+      <p>Waterproofing services for balconies and flower trulls to prevent water penetration, protect the structure, and ensure longevity of your outdoor spaces.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Waterproofing Repairs & All Kinds of Waterproofing Work</h3>
+      <p>Comprehensive waterproofing repairs and services for various applications, including roof, wall, and floor waterproofing, to provide a complete solution for water damage prevention.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
             </div>
 
             <div class="service-cta">
-                <h3>Property Care Services</h3>
+                <h3>Property Management Services & Invenstment Plans</h3>
                 <p>Looking for comprehensive property care? We offer specialized maintenance packages for both residential and commercial properties.</p>
-                <button class="cta-button">Learn More</button>
+                
+            <a href="https://wa.me/94714014414" class="cta-button" target="_blank">📞 Learn More</a>
+          </div> 
             </div>
         </div>
     </div>
@@ -375,17 +974,17 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact-container">
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <textarea placeholder="Describe your project" required></textarea>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" placeholder="Describe your project" required></textarea>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
             <div class="contact-info">
                 <h3>Get In Touch</h3>
                 <p>📱 (555) 123-4567</p>
-                <p>📧 info@elitehandyman.com</p>
+                <p>📧 rimazrizwan2001717@gmail.com</p>
                 <p>📍 123 Service Street, City, State</p>
             </div>
         </div>
@@ -412,6 +1011,26 @@
             <p>&copy; 2024 MR Handyman. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    console.log(name, email, phone, message); // Check the form values
+    
+    // Set the destination email here
+    let recipientEmail = "rimazrizwan2001717@gmail.com";
+    
+    let mailtoLink = `mailto:${recipientEmail}?subject=Contact Form Submission&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+    
+    window.location.href = mailtoLink;
+});
+
+        </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Initialize Lucide icons
