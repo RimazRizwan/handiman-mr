@@ -992,3 +992,14 @@ h2 {
     font-size: 1.5rem;
     color: #666;
   }
+
+
+  .services-list a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Keeps the default text color */
+}
+
+.modal-toggle {
+    display: none;
+  }
+
